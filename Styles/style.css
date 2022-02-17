@@ -47,6 +47,9 @@ header a{
 
 .title{
     background-image: url(../Images/pinkhair.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     height: 100vh;
     /* box-sizing: border-box; */
@@ -89,4 +92,7 @@ a:hover {
 button:hover{
     background-color: lightblue;
     border: solid 2px #2AA1E0;
+    box-shadow: 0 4px 8px 0;
+    transition: all 1s ease-in-out;
+    cursor:pointer
 }
