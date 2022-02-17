@@ -102,6 +102,18 @@ h2{
     /* overflow: auto; */
  
 
+.imagewhat{
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+
+}
+
+.what__content{
+    display: flex;
+}
 
 button{
     height: 70px;
