@@ -13,11 +13,10 @@ body{
 }
 
 .container{
-    /* width: 80%; */
+    width: 90%;
     min-height: 500px;
     padding: 100px;
 }
-
 
 header {
     background-color: grey;
@@ -84,7 +83,7 @@ h2{
     min-height: 600px;
 }
 
-.info__content{
+.info__content {
         width: 80%;
         height: 100%;
         margin-top: 20px;
@@ -102,16 +101,15 @@ h2{
     /* overflow: auto; */
  
 
-.imagewhat{
+.imagewhat {
     max-width: 60%;
     height: auto;
     border-radius: 20px;
     padding: 15px;
     border: solid 2px #2AA1E0;
-
 }
 
-.what__content{
+.what__content, .content__how {
     display: flex;
 }
 
@@ -138,6 +136,21 @@ h2{
     align-items: center;
 }
 
+.image__how{
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
+
+.whenimage{
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
 
 
 button{
@@ -151,6 +164,9 @@ button{
     background-color: #2AA1E0;
 }
 
+.when__content{
+    display: flex;
+}
 
 
 
