@@ -51,9 +51,9 @@ header a{
     
 }
 
+
 .title{
     background-image: url(../Images/pinkhair.jpg);
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -78,9 +78,10 @@ h2{
 }
 
 
-.info__what, .info__how, .info__when{
+.info__what, .info__how, .info__when, .team__info{
     max-width: 600px;
     min-height: 600px;
+    width: 100%;
 }
 
 .info__content {
@@ -199,4 +200,29 @@ img:hover{
     0% {transform: scale(1);}
     50% {transform: scale(1.2);}
     100% {transform: scale(1);}
+}
+
+footer{
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+footer li{
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 2;
+    margin: 20px;
+    
 }
