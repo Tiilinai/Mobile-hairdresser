@@ -12,6 +12,12 @@ body{
     color: rgb(104, 103, 103);
 }
 
+.container{
+    width: 90%;
+    min-height: 500px;
+    padding: 100px;
+}
+
 header {
     background-color: grey;
     opacity: 80%;
@@ -45,8 +51,11 @@ header a{
     
 }
 
+
 .title{
     background-image: url(../Images/pinkhair.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     height: 100vh;
     /* box-sizing: border-box; */
@@ -68,6 +77,89 @@ h2{
     font-size: 50px;
 }
 
+
+.info__what, .info__how, .info__when, .team__info{
+    max-width: 600px;
+    min-height: 600px;
+    width: 100%;
+}
+
+.info__content {
+        width: 80%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+
+/* .info-container {
+    /* display: inline-block; */
+    /* max-height: 200px;
+    max-width: 400px;
+    padding: 5px;
+    margin: 5px; */
+    /* border: 5px solid grey; */
+    /* box-sizing: border-box; */
+    /* overflow: auto; */
+ 
+
+.imagewhat {
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
+
+.what__content, .content__how {
+    display: flex;
+}
+
+
+.thumbnail{
+    box-sizing: border-box;
+    /* border: 1px solid #2AA1E0; */
+    width: 450px;
+    height: 450px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.imagecontainer{
+    width: 300px;
+    height: 300px;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image__how{
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
+
+.whenimage{
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
+
+
 button{
     height: 70px;
     width: 150px;
@@ -79,8 +171,14 @@ button{
     background-color: #2AA1E0;
 }
 
+.when__content{
+    display: flex;
+}
 
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 a:hover {
     color: #2AA1E0;
@@ -89,4 +187,46 @@ a:hover {
 button:hover{
     background-color: lightblue;
     border: solid 2px #2AA1E0;
+    box-shadow: 0 4px 8px 0;
+    transition: all 1s ease-in-out;
+    cursor:pointer
+}
+
+img:hover{
+    animation: imagescale 4s ease infinite;
+}
+
+@keyframes imagescale{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+input:hover{
+    border: #2AA1E0 solid 2px;
+}
+
+footer{
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+footer li{
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 2;
+    margin: 20px;
+    
 }
