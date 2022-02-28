@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0990c18c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <link rel="stylesheet" href="Styles/style.css">
 
 </head>
@@ -16,10 +19,16 @@
     opacity 60%-->
         <nav>
             <ul>
+
+    
                 <li> <a href="">About us</a></li>
                 <li><a href="">Gallery</a></li>
+
+                <li><a href="">About us</a></li>
+                <li><a href="">Gallery</a></li>
+
                 <li><a href="">Contact us</a></li>
-                <li><a href="">Booking</a></li>
+                <li><a href=""> <i class="fa-solid fa-scissors"></i>Booking</a></li>
             </ul>
         </nav>
         <label for="search">Search</label>
@@ -29,63 +38,130 @@
     <main>
         <!--First container background image of pink hair and logo
         fat font "the mobile hairdresser" followed by what, when, where sections-->
-        <div class="container title">
-            <h1> The <br> Mobile <br> Hairdresser</h1> <!--justify content flex start-->
+        <div class="title">
+            <h1 class="animate__animated animate__bounce"> The <br> Mobile <br> Hairdresser</h1> <!--justify content flex start-->
             <button>Book now!</button> <!--justify content center, align-items flex end-->
         </div>
 
         <section class="container what">
-            <div class=" info__what">
-                <div class="what__title">
-                    <h2>What do we do?</h2>
+            <div class="what__content">
+                <div class="info__what">
+                    <div class="info__content">
+                        <div class="what__title">
+                            <h2>What do we do?</h2>
+                        </div>
+                        <div class="what__text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta fugit corporis nostrum reprehenderit dignissimos, omnis iste rem. Commodi at harum minima dicta dolorem reiciendis 
+                            iusto, doloremque, perspiciatis quas nam explicabo.</p>
+                        <button>Book us now</button>
+                        </div>
+                    </div> 
                 </div>
-                <div class="what__text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta fugit corporis nostrum reprehenderit dignissimos, omnis iste rem. Commodi at harum minima dicta dolorem reiciendis 
-                    iusto, doloremque, perspiciatis quas nam explicabo.</p>
-                    <button>Book us now</button>
-                </div>
+                <div class="what__img">
+                    <img class="imagewhat" src="images/purple hair.jpg" alt="">
+                </div>   
             </div>
         </section>
+
+
+        <section class="menu">
+        </section>
+
+
         <section class="container icons">
-            <div>
-                <!--Horizontal icons made of photos, eg hairstyles, treatments-->
+            <div class="thumbnail">
+               <div class="imagecontainer">
+                    <img class="icon" src="Images/rollers.jpg" alt="Woman with hair rollers">
+                </div>
+                <h3><a href="">Treatments</a></h3>
+                <p>Treat yourself!</p>
+            </div>
+            <div class="thumbnail">
+                <div class="imagecontainer">
+                    <img class="icon" src="images/hairdryer.jpg" alt="hairdryer">
+                </div>
+                <h3><a href="">Styling</a></h3>
+                <p>We can do it all!</p>
+            </div>
+            <div class="thumbnail">
+                <div class="imagecontainer">
+                    <img class="icon" src="Images/hair from back.jpg" alt="woman with long hair">
+                </div>
+                <h3><a href=""><i class="fa-solid fa-scissors"></i>Cuts</a></h3>
+                <p>Short bob or long waves?</p>
+            </div>
+            <div class="thumbnail">
+                <div class="imagecontainer">
+                    <img class="icon" src="Images/products.jpg" alt="hairproducts">
+                </div>
+                <h3><a href="">Products</a></h3>
+                <p>The products we use and sell</p>
             </div>
         </section>
+
+
+
         <section class="container how">
-            <div class=" info__how">
-                <div class="how__title">
-                    <!--How it works?-->
-                    <h2>How we work</h2>
+            <div class="content__how">
+                <div>
+                    <img class="image__how" src="Images/chair and light.jpg" alt="chair">
                 </div>
-                <div class="how__text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, voluptate aspernatur maxime inventore ad tempora neque distinctio nemo vero facere recusandae impedit 
-                    corrupti eligendi nisi architecto aliquam officiis ab perspiciatis.</p>
+                <div class="info__how">
+                    <div class="how__title">
+                        <!--How it works?-->
+                        <h2>How we work</h2>
+                        </div>
+                    <div class="how__text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, voluptate aspernatur maxime inventore ad tempora neque distinctio nemo vero facere recusandae impedit 
+                        corrupti eligendi nisi architecto aliquam officiis ab perspiciatis.</p>
+                    </div>
+                    <button>Book appointment</button>
                 </div>
-                <button>Book appointment</button>
             </div>
         </section>
-        <section class="container when">
-            <div class="info__when">
-                <div class="when__title">
-                    <h2>When do you need us?</h2>
-                    <!--when? wedding, everyday, graduation, holiday, dinner out-->
+
+
+
+        <section class="container">
+            <div class="when__content">
+                <div class="info__when">
+                    <div class="when__title">
+                        <h2>When do you need us?</h2>
+                        <!--when? wedding, everyday, graduation, holiday, dinner out-->
+                    </div>
+                    <div class="when__text">
+                        <p>The short answer is: you always need us! The long answer states the obvious:</p>
+                        <ul>
+                            <li>Weddings</li>
+                            <li>Graduation</li>
+                            <li>Parties</li>
+                            <li>Holidays</li>
+                            <li>Dinner out</li>
+                            <li>Everyday!</li>
+                        </ul>
+                    </div>
+                    <button>Book a consultation</button>
                 </div>
-                <div class="when__text">
-                    <p>The short answer is: you always need us! The long answer states the obvious:</p>
-                    <ul>
-                        <li>Weddings</li>
-                        <li>Graduation</li>
-                        <li>Parties</li>
-                        <li>Holidays</li>
-                        <li>Dinner out</li>
-                        <li>Everyday!</li>
-                    </ul>
+                <div class="img__when">
+                    <img class="whenimage" src="images/wedding.jpg" alt="Wedding hair">
                 </div>
-                <button>Book a consultation</button>
             </div>
         </section>
     </main>
     
+    <section class="container">
+        <div class="team__content">
+            <div class="team__info">
+                <h2>Our team</h2>
+                <p>Our professional hairdressers all have relevant education and many years of experience.
+                    You can ask for any haircut, styling or treatment and they are ready to cater to you!
+                    Our team is ready to take care of women, men or children. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div>
             <nav>
