@@ -1,0 +1,112 @@
+html{
+    background-color:  #f7f7f7;
+}
+
+body{
+    background-color: white;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(104, 103, 103);
+}
+
+header {
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header li{
+    flex-direction: row;
+    font-size: 25px;
+    line-height: 2;
+    margin: 20px;
+}
+
+header a{
+    color: antiquewhite;
+    text-decoration: none; 
+}
+
+.title{
+    background-image: url(../Images/pinkhair.jpg);
+    background-attachment: fixed;
+    height: 200vh;
+    /* box-sizing: border-box; */
+    display: flex;
+}
+
+.gallery-box {
+    margin: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 4px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 20%;
+    padding: 10px 10px;
+}
+  
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+img:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    
+}
+
+.gallery-text {
+    justify-content: flex-end;
+    color: rgb(104, 103, 103);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+
