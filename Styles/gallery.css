@@ -1,5 +1,6 @@
 html{
     background-color:  #f7f7f7;
+    padding-left: 150px;
 }
 
 body{
@@ -40,6 +41,14 @@ header li{
 header a{
     color: antiquewhite;
     text-decoration: none; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #2AA1E0;
 }
 
 .title{
@@ -110,3 +119,27 @@ img:hover {
 
 
 
+footer{
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+footer li{
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 2;
+    margin: 20px;
+    
+}
