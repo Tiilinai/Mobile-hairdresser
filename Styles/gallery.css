@@ -1,0 +1,56 @@
+html{
+    background-color:  #f7f7f7;
+}
+
+body{
+    background-color: white;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(104, 103, 103);
+}
+
+header {
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header li{
+    flex-direction: row;
+    font-size: 25px;
+    line-height: 2;
+    margin: 20px;
+    
+}
+
+header a{
+    color: antiquewhite;
+    text-decoration: none;
+    
+}
+
+.title{
+    background-image: url(../Images/pinkhair.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
