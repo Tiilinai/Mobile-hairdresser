@@ -54,3 +54,14 @@ header a{
     flex-direction: column;
     justify-content: center;
 }
+
+.gallery-box {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 1500px;
+    height: 1000px;
+    background-color: #f7f7f7;
+    border-color: black;
+    border-radius: 10px;
+}
