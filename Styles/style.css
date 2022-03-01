@@ -13,9 +13,16 @@ body{
 }
 
 .container{
-    width: 90%;
-    min-height: 500px;
-    padding: 100px;
+    width: 100%;
+    min-height: 600px;
+    padding: 50px;
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
 }
 
 header {
@@ -28,6 +35,7 @@ header {
     display: flex;
     align-items: center;
     color: antiquewhite;
+    z-index: 1;
 }
 
 header ul{
@@ -96,19 +104,29 @@ h2{
     font-size: 50px;
 }
 
-
-.info__what, .info__how, .info__when, .team__info{
-    max-width: 600px;
-    min-height: 600px;
-    width: 100%;
+.what__content {
+    display: flex;
+    justify-content: space-between;
 }
 
-.info__content {
-        width: 80%;
-        height: 100%;
-        margin-top: 20px;
-    }
 
+.info__what{
+    max-width: 50%;
+    min-height: 600px;
+    width: 100%;
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.imagewhat {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 2px #2AA1E0;
+}
 
 /* .info-container {
     /* display: inline-block; */
@@ -120,20 +138,6 @@ h2{
     /* box-sizing: border-box; */
     /* overflow: auto; */
  
-
-.imagewhat {
-    max-width: 60%;
-    height: auto;
-    border-radius: 20px;
-    padding: 15px;
-    border: solid 2px #2AA1E0;
-}
-
-.what__content, .content__how {
-    display: flex;
-}
-
-
 .thumbnail{
     box-sizing: border-box;
     /* border: 1px solid #2AA1E0; */
@@ -162,17 +166,42 @@ h2{
     align-items: center;
 }
 
+.info__how{
+    max-width: 600px;
+    min-height: 600px;
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info__content {
+        width: 80%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+
+.content__how {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+
 .image__how{
-    max-width: 40%;
-    height: auto;
+    max-width: 400px;
+    height: 400px;
     border-radius: 20px;
     padding: 15px;
     border: solid 2px #2AA1E0;
 }
 
 .whenimage{
-    max-width: 50%;
-    height: auto;
+    max-width: 500px;
+    height: 300px;
     border-radius: 20px;
     padding: 15px;
     border: solid 2px #2AA1E0;
@@ -188,13 +217,34 @@ button{
     box-sizing: border-box;
     border: none;
     background-color: #2AA1E0;
+    display: block;
 }
 
 .when__content{
     display: flex;
 }
 
-a{
+.info__when{
+    max-width: 400px;
+    min-height: 600px;
+    width: 100%;
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.team__info{
+    max-width: 600px;
+    min-height: 600px;
+    width: 100%;
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ a {
     text-decoration: none;
     color: inherit;
 }
