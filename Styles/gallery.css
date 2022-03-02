@@ -23,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     color: antiquewhite;
+    z-index: 2;
 }
 
 header ul{
@@ -70,6 +71,8 @@ a:hover {
     border-radius: 10px;
 }
 
+/* IMAGES */
+
 .column {
     flex: 25%;
     max-width: 20%;
@@ -82,17 +85,16 @@ a:hover {
     width: 100%;
     border-radius: 10px;
     transition: 0.25s ease;
+    z-index: 1;
 }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+ @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
 }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
@@ -115,9 +117,11 @@ img:hover {
     color: rgb(104, 103, 103);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    z-index: 0;
 }
 
 
+/* FOOTER */
 
 footer{
     background-color: grey;
