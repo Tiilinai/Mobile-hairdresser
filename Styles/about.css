@@ -1,18 +1,22 @@
-html{
+html
+{
     background-color:  #f7f7f7;
+    
 }
 
-body{
+body
+{
+    
     background-color: white;
     max-width: 1600px;
-    width: 100%;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: rgb(104, 103, 103);
 }
 
-header {
+header 
+{
     background-color: grey;
     opacity: 80%;
     height: 100px;
@@ -24,30 +28,36 @@ header {
     color: antiquewhite;
 }
 
-header ul{
+header ul
+{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-header li{
+header li
+{
     flex-direction: row;
     font-size: 25px;
     line-height: 2;
     margin: 20px;
 }
 
-header a{
+header a
+{
     color: antiquewhite;
     text-decoration: none; 
 }
 
-.title{
-    background-image: url(../Images/pinkhair.jpg);
-    background-attachment: fixed;
-    height: 200vh;
-    /* box-sizing: border-box; */
-    display: flex;
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover 
+{
+    color: #2AA1E0;
 }
 
 .about-container
@@ -63,7 +73,15 @@ header a{
 {
     width: 600px;
     height: auto;
-    border-radius: 10px; ;
+    border-radius: 10px; 
+}
+
+.about img:hover
+{
+    color: #2AA1E0;
+    box-shadow: 0 0 10px #2AA1E0;
+    opacity: 90% #2AA1E0;;
+    cursor:pointer
 }
 
 .about-text
@@ -90,4 +108,29 @@ button:hover
     box-shadow: 0 4px 8px 0;
     transition: all 1s ease-in-out;
     cursor:pointer
+}
+
+footer{
+    background-color: grey;
+    opacity: 80%;
+    height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+footer li{
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 2;
+    margin: 20px;
+    
 }
